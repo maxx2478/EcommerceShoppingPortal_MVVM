@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        drawable="@drawable/home"
+        text="@string/menu_home" />
+
+    <tab
+        drawable="@drawable/blog"
+        text="@string/menu_gallery" />
+
+    <tab
+        drawable="@drawable/myorders"
+        text="@string/myorders" />
+
+    <tab
+        drawable="@drawable/cartwhite"
+        text="@string/mycart" />
+
+    <tab
+        drawable="@drawable/profile"
+        text="@string/menu_home" />
+</tabs>

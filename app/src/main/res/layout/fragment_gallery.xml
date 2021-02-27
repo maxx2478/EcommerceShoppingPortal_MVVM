@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="140dp"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/mySpinner"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"/>
+
+                <com.rm.rmswitch.RMSwitch
+                    android:id="@+id/switchview"
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    app:checked="true"
+                    app:forceAspectRatio="false"
+                    app:enabled="true"
+                    app:switchDesign="slim"
+                    app:switchBkgCheckedColor="#00C6E8"
+                    app:switchBkgNotCheckedColor="#F62222"
+                    app:switchToggleCheckedColor="#00BBDC"
+                    app:switchToggleCheckedImage="@drawable/grid"
+                    app:switchToggleNotCheckedColor="#C50000"
+                    app:switchToggleNotCheckedImage="@drawable/listtext"
+                    android:backgroundTint="#ffffff" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/countriesList"
+            android:layout_below="@id/ll1"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/list_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/errorString" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

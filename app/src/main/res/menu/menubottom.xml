@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item0"
+        android:title="@string/menu_home"
+        android:icon="@drawable/home"/>
+
+
+
+    <item
+        android:id="@+id/item1"
+        android:title="@string/blog"
+        android:icon="@drawable/blog"/>
+
+    <item
+        android:id="@+id/item2"
+        android:title="@string/mycart"
+        android:icon="@drawable/cartwhite"/>
+
+    <item
+        android:id="@+id/item3"
+        android:title="@string/myorders"
+        android:icon="@drawable/myorders"/>
+
+
+
+
+
+    <item
+        android:id="@+id/item4"
+        android:title="@string/myprofile"
+        android:icon="@drawable/profile"/>
+
+</menu>

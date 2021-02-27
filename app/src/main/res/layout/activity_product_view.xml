@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ProductView">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@+id/transactionbuttons"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/header"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitCenter"
+                    android:foregroundTint="@color/black"
+                    android:backgroundTint="#575757"
+                    android:id="@+id/backbutton"
+                    android:background="@drawable/ic_baseline_arrow_back_24"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/product_details_tag"
+                    android:paddingTop="7dp"
+                    android:id="@+id/centertitle"
+                    android:textStyle="bold"
+                    android:textColor="#454545"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    android:fontFamily="@font/exo"/>
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8.5dp"
+                    android:paddingRight="32.5dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="-20dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="#14D9F3"
+                    fancy:fb_focusColor="#00A3B8"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text=" "
+                    fancy:fb_fontIconResource="&#xf064;"
+                    android:layout_alignParentEnd="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <com.github.piasy.biv.view.BigImageView
+                android:id="@+id/productimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:failureImage="@mipmap/ic_launcher"
+                app:failureImageInitScaleType="center"
+                app:optimizeDisplay="true"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll2"
+        android:layout_below="@id/header"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:text="Product Title"
+            android:id="@+id/producttitle"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#474747"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:fontFamily="@font/exo"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/discount1"
+                android:textSize="13sp"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@drawable/roundedcorners"
+                android:text="30% OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:paddingStart="8dp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="7dp"
+                android:rating="4"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/productprice"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:text="Price"
+            android:textColor="#393939"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="13sp"
+            android:paddingStart="10dp"
+            android:text="Available Colors"
+            android:textColor="#393939"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/colorpallets"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:text="Product Desc"
+            android:padding="8dp"
+            android:id="@+id/productdesc"
+            android:textStyle="bold"
+            android:textColor="#474747"
+            android:gravity="start"
+            android:textSize="13sp"
+            android:fontFamily="@font/exo"/>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/transactionbuttons"
+        android:layout_height="wrap_content">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/addtocart"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            android:layout_margin="5dp"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#DA7800"
+            fancy:fb_focusColor="#AC5900"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Add to Cart"
+            fancy:fb_textColor="#FFFFFF" />
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buynow"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            android:layout_margin="5dp"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#00AEDA"
+            fancy:fb_focusColor="#007BAC"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Buy Now"
+            fancy:fb_textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
