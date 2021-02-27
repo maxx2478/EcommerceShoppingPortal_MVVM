@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".view.MainActivity">
+    tools:context=".ui.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
 
 </com.google.android.material.appbar.AppBarLayout>
 
-    <com.manohar.ecommerceshoppingportal.view.NonSwipeableViewPager
+    <com.manohar.ecommerceshoppingportal.ui.NonSwipeableViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"

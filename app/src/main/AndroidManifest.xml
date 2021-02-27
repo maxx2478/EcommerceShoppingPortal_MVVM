@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".viewmodel.MasterClass"
+        android:name=".ui.MasterClass"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +17,7 @@
         android:theme="@style/Theme.ECommerceShoppingPortal"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".view.SplashScreen"
+            android:name=".ui.SplashScreen"
             android:theme="@style/Theme.ECommerceShoppingPortal.NoActionBar2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,10 +26,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.ProductView"
+            android:name=".ui.productpage.ProductView"
             android:theme="@style/Theme.ECommerceShoppingPortal.NoActionBar2" />
         <activity
-            android:name=".view.MainActivity"
+            android:name=".ui.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.ECommerceShoppingPortal.NoActionBar"></activity>
 
